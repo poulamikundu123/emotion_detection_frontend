@@ -252,7 +252,7 @@ function App() {
 
     setIsDetecting(true);
     try {
-      const response = await axios.post('http://127.0.0.1:8000/detect-emotion', {
+      const response = await axios.post('https://emotion-detection-backend-2.onrender.com/detect-emotion', {
         image: base64Image
       });
 
